@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>金投手后台管理系统</title>
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      color: #0e0e0e;
+      font-size: 13px;
+      font-family: "Microsoft Yahei"
+    }
+
+    ol, ul {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #0e0e0e;
+      text-decoration: none;
+    }
+
+    .content-body {
+      margin: 10px 15px;
+      padding-bottom: 100px;
+    }
+
+    .main-content {
+      overflow-y: scroll;
+      -moz-padding-end: 0;
+    }
+
+    .bounce-enter-active {
+      animation: bounce-in .2s;
+    }
+
+    .bounce-leave-active {
+      animation: bounce-out .2s;
+    }
+
+    @keyframes bounce-in {
+      0% {
+        transform: scale(.4);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes bounce-out {
+      0% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scale(.4);
+      }
+    }
+  </style>
+
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<script type="text/javascript">
+  window.onload = function () {
+    // 左侧导航拖动调整宽度
+    var drager = document.getElementById('z-drager')
+    var navbox = document.getElementById('sub-nav')
+    var contentbox = document.getElementById('main-body')
+
+    // 缩放窗口大小时动态调整导航和内容去的高度
+    window.onresize = function () {
+      var navHeight = (document.documentElement.clientHeight - 70) + 'px'
+      var mainContent = document.getElementsByClassName('main-content')
+      var subItemList = document.getElementsByClassName('sub-item-list')
+      var navTagBox = document.getElementsByClassName('z-nav-tag-box')
+
+      if (mainContent.length) { mainContent[0].style.height = navHeight }
+      if (subItemList.length) { subItemList[0].style.height = navHeight }
+      if (navTagBox.length) { navTagBox[0].style.width = (document.body.offsetWidth - 422) + 'px' }
+    }
+    if (drager !== null) {
+      drager.onmousedown = function (e) {
+        let mousedownEve = e || event
+        var disX = mousedownEve.clientX - this.offsetLeft
+        if (drager.setCapture) drager.setCapture()
+        document.onmousemove = function (e) {
+          let mousemoveEve = e || event
+          var w = mousemoveEve.clientX - disX
+          if (w < 180) w = 180
+          if (w > 350) w = 350
+          drager.style.left = w + 'px'
+          navbox.style.width = w + 10 + 'px'
+          contentbox.style.paddingLeft = w + 10 + 'px'
+        }
+        document.onmouseup = function () {
+          document.onmousemove = null
+          document.onmouseup = null
+          if (drager.setCapture) drager.releaseCapture()
+        }
+        return false
+      }
+    }
+  }
+</script>
+</body>
+</html>

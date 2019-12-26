@@ -1,0 +1,102 @@
+/**
+ * Created by David on 2018/4/28.
+ */
+.imgBox {
+  display: flex;
+  margin-top: 2%;
+  user-select:none;
+}
+
+.border-radius{
+  border-radius:50%
+}
+
+.imgAside {
+  width: 7%;
+  padding: 0 2%;
+  .aside-operation {
+    text-align: center;
+    padding: 1% 0;
+    position: fixed;
+    width: 6%;
+    ul{
+      border: 1px solid #D7D7D7;
+    }
+
+    ul>li:hover{
+      background:  #D7D7D7 ;
+    }
+    ul>li:first-child:hover{
+      background: none ;
+      cursor: auto;
+    }
+    ul>li{
+      line-height: 50px;
+      height: 50px;
+      cursor:pointer;
+      width: 100%;
+      border-bottom:1px solid #D7D7D7 ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1%;
+      .pen-larger{
+        width: 50px;
+        height: 50px;
+        background: #aaa;
+        .border-radius
+      }
+      .pen-middle{
+        width: 30px;
+        height: 30px;
+        background: #aaa;
+        .border-radius
+      }
+      .pen-small{
+        width: 20px;
+        height: 20px;
+        background: #aaa;
+        .border-radius
+      }
+
+    }
+    ul>li:nth-child(-n+3){
+      border-bottom:none;
+    }
+
+    ul>li:nth-child(3){
+     padding:5px 0;
+    }
+    ul>li:nth-child(2){
+     padding:10px 0;
+    }
+    ul>li:last-child{
+      border-bottom: 0;
+    }
+    .save-btn{
+      height: 50px;
+      line-height: 50px;
+      margin-top: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &>button{
+        flex: 1;
+        padding: 10%;
+      }
+    }
+
+  }
+
+}
+
+.imgTable {
+  margin-top:1%;
+  width: 80%;
+  display: flex;
+}
+
+.brushActive{
+  border: 3px solid #00aa88;
+}

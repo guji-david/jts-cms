@@ -1,0 +1,61 @@
+/**
+ * Created by David on 2017/8/22.
+ */
+.table-line{
+  width:100%;
+  padding:0 18px;
+  li{
+    width:100%;
+    margin-left: -18px;
+    padding:0 18px ;
+    text-align: center;
+    border-bottom: 1px solid #dfe6ec;
+  }
+  li:last-child{
+    border-bottom: none;
+  }
+
+}
+.z-tool-bar{
+  min-height: 40px;
+}
+.tabs-header {
+  border-bottom: 1px solid #d1dbe5;
+  padding: 0;
+  position: relative;
+  margin: 15px 0;
+
+  .nav-wrap {
+    margin-bottom: -1px;
+    position: relative;
+    .nav-scroll{
+      overflow: hidden;
+      .tabs-nav {
+        position: relative;
+        transition: transform .3s;
+        float: left;
+        .tabs-item{
+          padding: 0 16px;
+          height: 42px;
+          box-sizing: border-box;
+          line-height: 42px;
+          display: inline-block;
+          list-style: none;
+          font-size: 14px;
+          color: #8391a5;
+          border: 1px solid transparent;
+          cursor: pointer;
+          transition: all .3s cubic-bezier(.645,.045,.355,1);
+        }
+        .is-active {
+          border: 1px solid #d1dbe5;
+          border-bottom-color: #fff;
+          border-radius: 4px 4px 0 0;
+          color: #20a0ff;
+        }
+      }
+    }
+
+
+  }
+}

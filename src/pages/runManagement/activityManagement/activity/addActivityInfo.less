@@ -1,0 +1,97 @@
+/**
+ * Created by David on 2017/4/28.
+ */
+#z-edit{
+  margin-top: 20px;
+}
+.main{
+  position:relative;
+  width: 100%;
+  .wrap{
+    background: #f0f0f0;
+    border: 2px grey solid;
+    width: 98%;
+    height:auto;
+    position: absolute;
+    //margin-top: 1%;
+    //margin-right: 1%;
+    //top:50%;
+    //left:50%;
+    //transform: translate(-50%,-50%);
+    //z-index: 2;
+
+
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, 0%);
+    z-index: 2;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 100px;
+    .addGiftBox{
+      background: white;
+      overflow-y: auto;
+      overflow-x: hidden;
+      .addGiftTapBox{
+        padding: 2% 2% 0 2% ;
+        .addGiftTap{
+          padding:5% 0;
+          border: 1px gray solid;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+      }
+    }
+  }
+}
+.el-input,.el-textarea{
+  width:80%;
+  float: left;
+}
+
+.z-input-span{
+  color: #ff0000;
+  padding: 0px 20px;
+}
+.el-collapse-item__wrap{
+  background:#fff;
+}
+.el-collapse-item__header__arrow{
+  float: right;
+}
+.el-collapse-item__header{
+  border:none
+}
+.el-select{
+  width: 100%;
+}
+.height36{
+  height:36px;
+  margin: 15px 80px;
+}
+.errorMsg{
+  position: absolute;
+  top: 40px;
+  font-size: 12px;
+  color: #ff4949;
+  line-height: 1;
+  z-index: 10;
+}
+.myRequired .el-form-item__label:before{
+  content: '*' !important;
+  color: #ff4949 !important;
+  margin-right: 4px !important;
+
+}
+.my-input-span{
+  position: absolute;
+  left: -96px;
+  top: 2px;
+  color: #ff4949;
+}
+.content-body{
+  padding-bottom: 0;
+}
+

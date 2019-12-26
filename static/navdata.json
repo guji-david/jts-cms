@@ -1,0 +1,446 @@
+[
+  {
+    "id": "1",
+    "url": "",
+    "label": "用户管理",
+    "children": [
+      {
+        "id": "11",
+        "pid": "1",
+        "url": "",
+        "children": [
+          {
+            "id": 111,
+            "pid": 11,
+            "url": "/user/borrower/accountinfomanagement",
+            "label": " 账户信息管理"
+          }
+        ],
+        "label": "出借人账户管理"
+      },
+      {
+        "id": "12",
+        "pid": "1",
+        "url": "",
+        "children": [
+          {
+            "id": 121,
+            "pid": 12,
+            "url": "/user/borrower/recharge",
+            "label": " 充值记录"
+          },
+          {
+            "id": 122,
+            "pid": 12,
+            "url": "/user/borrower/withdrawals",
+            "label": " 提现记录"
+          },
+          {
+            "id": 123,
+            "pid": 12,
+            "url": "/user/borrower/trade",
+            "label": " 出借记录"
+          },
+          {
+            "id": 124,
+            "pid": 12,
+            "url": "/user/borrower/tenderFreeze",
+            "label": "出借解冻记录"
+          },
+          {
+            "id": 125,
+            "pid": 12,
+            "url": "/user/borrower/tenderLoan",
+            "label": "放款记录"
+          },
+          {
+            "id": 126,
+            "pid": 12,
+            "url": "/user/borrower/payment",
+            "label": "回款记录"
+          },
+          {
+            "id": 128,
+            "pid": 12,
+            "url": "/user/borrower/bonusQuery",
+            "label": " 红利查询"
+          }
+        ],
+        "label": "出借人交易管理"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "url": "",
+    "label": "运营管理",
+    "children": [
+      {
+        "id": "21",
+        "pid": "2",
+        "url": "",
+        "label": "用户运营",
+        "children": [
+          {
+            "id": "211",
+            "pid": "21",
+            "url": "/run/user/present",
+            "label": "手动送礼品"
+          },
+          {
+            "id": "212",
+            "pid": "21",
+            "url": "/run/message/message",
+            "label": "站内信管理"
+          },
+          {
+            "id": "213",
+            "pid": "21",
+            "url": "/runManagement/userRecommend",
+            "label": "好友关系"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "pid": "2",
+        "url": "",
+        "label": "礼品管理",
+        "children": [
+          {
+            "id": "221",
+            "pid": "22",
+            "url": "/run/gift/redpacket",
+            "label": "红包列表"
+          },
+          {
+            "id": "222",
+            "pid": "22",
+            "url": "/run/gift/coupon",
+            "label": "加息券列表"
+          }
+        ]
+      },
+      {
+        "id": "23",
+        "pid": "2",
+        "url": "",
+        "label": "活动管理",
+        "children": [
+          {
+            "id": "231",
+            "pid": "23",
+            "url": "/run/activity/activityInfo",
+            "label": "活动信息管理"
+          }
+        ]
+      },
+      {
+        "id": "25",
+        "pid": "2",
+        "url": "",
+        "label": "内容管理",
+        "children": [
+          {
+            "id": "251",
+            "pid": "25",
+            "url": "/run/newsmanage/news",
+            "label": "新闻资讯管理"
+          },
+          {
+            "id": "252",
+            "pid": "25",
+            "url": "/run/noticemanage/notice",
+            "label": "网站公告管理"
+          },
+          {
+            "id": "253",
+            "pid": "25",
+            "url": "/run/admanage/ad",
+            "label": "广告位管理"
+          },
+          {
+            "id": "254",
+            "pid": "25",
+            "url": "/run/bankmanage/bank",
+            "label": "银行信息管理"
+          },
+          {
+            "id": "255",
+            "pid": "25",
+            "url": "/run/question/question",
+            "label": "问题管理"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "label": "资产管理",
+    "url": "",
+    "children": [
+      {
+        "id": "31",
+        "pid": "3",
+        "url": "",
+        "label": "借款人账户管理",
+        "children": [
+          {
+            "id": "311",
+            "pid": "31",
+            "url": "/assets/borrower/record",
+            "label": "借款人录入"
+          },
+          {
+            "id": "312",
+            "pid": "31",
+            "url": "/assets/borrower/approval",
+            "label": "借款人审核"
+          },
+          {
+            "id": "313",
+            "pid": "31",
+            "url": "/assets/borrower/list",
+            "label": "借款人列表"
+          }
+        ]
+      },
+      {
+        "id": "32",
+        "pid": "3",
+        "url": "",
+        "label": "项目信息管理",
+        "children": [
+          {
+            "id": "321",
+            "pid": "32",
+            "url": "/assets/projectInfo/record",
+            "label": "项目录入"
+          },
+          {
+            "id": "322",
+            "pid": "32",
+            "url": "/assets/projectInfo/approval",
+            "label": "项目审核"
+          },
+          {
+            "id": "323",
+            "pid": "32",
+            "url": "/assets/projectInfo/publish",
+            "label": "项目发布"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "url": "",
+    "label": "财务管理",
+    "children": [
+      {
+        "id": "41",
+        "pid": "4",
+        "url": "",
+        "label": "项目信息管理",
+        "children": [
+          {
+            "id": "411",
+            "pid": "41",
+            "url": "/finance/proinfo/ProMarking",
+            "name": "ProMarking",
+            "label": "项目结标"
+          },
+          {
+            "id": "412",
+            "pid": "41",
+            "url": "/finance/proinfo/prorepayment",
+            "name": "ProRepatment",
+            "label": "项目还款"
+          },
+          {
+            "id": "413",
+            "pid": "41",
+            "url": "/finance/proinfo/propaidoff",
+            "name": "PaidOff",
+            "label": "已还清的项目"
+          },
+          {
+            "id": "414",
+            "pid": "41",
+            "url": "/finance/proinfo/CurrentLabel",
+            "name": "CurrentLabel",
+            "label": "已流标的项目"
+          }
+        ]
+      },
+      {
+        "id": "42",
+        "pid": "4",
+        "url": "",
+        "label": "项目资金管理",
+        "children": [
+          {
+            "id": "421",
+            "pid": "42",
+            "url": "/finance/fund/loan",
+            "label": "项目放款"
+          },
+          {
+            "id": "422",
+            "pid": "42",
+            "url": "/finance/fund/manager",
+            "label": "项目还款管理"
+          }
+        ]
+      },
+      {
+        "id": "43",
+        "pid": "4",
+        "url": "",
+        "label": "账户资金管理",
+        "children": [
+          {
+            "id": "431",
+            "pid": "43",
+            "url": "/finance/account/tradeDetail",
+            "label": "平台资金交易明细"
+          },
+          {
+            "id": "432",
+            "pid": "43",
+            "url": "/finance/account/bankDetail",
+            "label": "银行内部户资金明细"
+          },
+          {
+            "id": "433",
+            "pid": "43",
+            "url": "/finance/account/transfer",
+            "label": "平台资金行内划拨"
+          },
+          {
+            "id": "434",
+            "pid": "43",
+            "url": "/finance/account/status",
+            "label": "资金清算状态查询"
+          },
+          {
+            "id": "435",
+            "pid": "43",
+            "url": "/finance/account/accountHistory",
+            "label": "虚拟账户资金交易明细"
+          }
+        ]
+      },
+      {
+        "id": "44",
+        "pid": "4",
+        "url": "",
+        "label": "对账管理",
+        "children": [
+          {
+            "id": "441",
+            "pid": "44",
+            "url": "/finance/reconciliation/customerexpense",
+            "label": "客户开销户对账"
+          },
+          {
+            "id": "442",
+            "pid": "44",
+            "url": "/finance/reconciliation/batch",
+            "label": "批量放款对账"
+          },
+          {
+            "id": "443",
+            "pid": "44",
+            "url": "/finance/reconciliation/batchrepayment",
+            "label": "批量还款对账"
+          },
+          {
+            "id": "444",
+            "pid": "44",
+            "url": "/finance/reconciliation/merchantreconciliation",
+            "label": "商户出入帐对账"
+          }
+        ]
+      },
+      {
+        "id": "45",
+        "pid": "4",
+        "url": "",
+        "label": "投标贷项目信息管理",
+        "children": [
+          {
+            "id": "451",
+            "pid": "45",
+            "url": "/finance/projectManagement/TBDDelay",
+            "label": "延期还款的项目"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "url": "",
+    "label": "市场管理",
+    "children": [
+      {
+        "id": "51",
+        "pid": "5",
+        "url": "",
+        "label": "渠道管理",
+        "children": [
+          {
+            "id": "511",
+            "pid": "51",
+            "url": "/market/channel/customer",
+            "label": "渠道商户管理"
+          }
+        ]
+      },
+      {
+        "id": "52",
+        "pid": "5",
+        "url": "",
+        "label": "app版本管理",
+        "children": [
+          {
+            "id": "521",
+            "pid": "52",
+            "url": "/market/app/android",
+            "label": "安卓版本管理"
+          },
+          {
+            "id": "522",
+            "pid": "52",
+            "url": "/market/app/IOS",
+            "label": "IOS版本管理"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "url": "",
+    "label": "系统管理",
+    "children": [
+      {
+        "id": "61",
+        "pid": "6",
+        "url": "",
+        "label": "系统配置管理",
+        "children": [
+          {
+            "id": "611",
+            "pid": "61",
+            "url": "/system/configure/param",
+            "label": "系统参数配置"
+          }
+        ]
+      }
+    ]
+  }
+]
